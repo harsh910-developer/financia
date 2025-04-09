@@ -1,0 +1,85 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Custom styles for the transaction form */
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  border-radius: 8px 8px 0 0;
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Custom styles for the transaction table */
+.table th {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* Custom styles for the chart */
+canvas {
+  max-width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .col-md-4 {
+    margin-top: 20px;
+  }
+}
+
+/* Custom button styles */
+.btn-primary {
+  padding: 8px 20px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* Custom form styles */
+.form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-control, .form-select {
+  border-radius: 4px;
+  padding: 10px 12px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Badge styles */
+.badge {
+  padding: 6px 10px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* Footer styles */
+footer {
+  margin-top: auto;
+  border-top: 1px solid #e9ecef;
+}

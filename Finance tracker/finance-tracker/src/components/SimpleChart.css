@@ -1,0 +1,133 @@
+.simple-chart {
+  width: 100%;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-segment {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  position: relative;
+}
+
+.chart-segment:hover {
+  filter: brightness(1.1);
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.legend-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.legend-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 8px;
+  color: #333;
+}
+
+.legend-value {
+  font-weight: 700;
+  font-size: 14px;
+  color: #0066cc;
+}
+
+/* Custom colors with gradients */
+.chart-segment:nth-child(1) {
+  background: linear-gradient(135deg, #0066cc, #0088FE);
+}
+
+.chart-segment:nth-child(2) {
+  background: linear-gradient(135deg, #00C49F, #00a884);
+}
+
+.chart-segment:nth-child(3) {
+  background: linear-gradient(135deg, #FFBB28, #ffa500);
+}
+
+.chart-segment:nth-child(4) {
+  background: linear-gradient(135deg, #FF8042, #ff6b2b);
+}
+
+.chart-segment:nth-child(5) {
+  background: linear-gradient(135deg, #8884D8, #7a6fd0);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .simple-chart {
+    padding: 15px;
+  }
+  
+  .chart-container {
+    height: 30px;
+  }
+  
+  .legend-item {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    min-width: 120px;
+  }
+  
+  .legend-label, .legend-value {
+    font-size: 13px;
+  }
+}
+
+/* Add a title to the chart */
+.chart-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+/* Add a total value display */
+.chart-total {
+  text-align: right;
+  font-weight: 700;
+  color: #0066cc;
+  margin-top: 10px;
+  font-size: 16px;
+} 

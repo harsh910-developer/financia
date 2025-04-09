@@ -1,0 +1,3 @@
+id,type,amount,category,date,month,year,month_name,month_year
+1,expense,50.0,food,2025-04-09,4,2025,April,April 2025
+2,expense,50.0,food,2025-04-09,4,2025,April,April 2025

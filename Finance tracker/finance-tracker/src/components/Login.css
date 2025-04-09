@@ -1,0 +1,128 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e9ecef;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+    border-color: #357abd;
+    transform: translateY(-1px);
+}
+
+.btn-primary:disabled {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    opacity: 0.7;
+}
+
+.toggle-auth-mode {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.toggle-auth-mode:hover {
+    color: #343a40;
+}
+
+.alert {
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+/* New styles for tabs */
+.MuiTabs-root {
+    margin-bottom: 1.5rem;
+}
+
+.MuiTab-root {
+    text-transform: none;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.MuiTab-root.Mui-selected {
+    color: #1976d2;
+}
+
+.MuiTabs-indicator {
+    background-color: #1976d2;
+}
+
+/* Password confirmation field */
+.password-confirm-field {
+    margin-top: 1rem;
+}
+
+/* Form transitions */
+.form-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.form-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.form-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.form-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+}
+
+@media (max-width: 576px) {
+    .login-box {
+        padding: 1.5rem;
+    }
+    
+    .MuiTab-root {
+        min-width: 100px;
+        font-size: 0.9rem;
+    }
+} 

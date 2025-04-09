@@ -1,0 +1,188 @@
+.transaction-list {
+  margin-bottom: 2rem;
+}
+
+.transaction-list .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.transaction-list .list-group-item {
+  border-left: none;
+  border-right: none;
+  padding: 0.75rem 1rem;
+}
+
+.transaction-list .list-group-item:first-child {
+  border-top: none;
+}
+
+.transaction-list .list-group-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-list .transaction-group {
+  margin-bottom: 0.5rem;
+}
+
+.transaction-list .transaction-group:last-child {
+  margin-bottom: 0;
+}
+
+.transaction-list .transaction-category {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.transaction-list .transaction-amount {
+  font-size: 0.9rem;
+}
+
+.transaction-list .badge {
+  font-size: 0.85rem;
+  padding: 0.35em 0.65em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .transaction-list .card-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .transaction-list .card-header h2 {
+    text-align: center;
+  }
+
+  .transaction-list .btn {
+    width: 100%;
+  }
+
+  .transaction-list .transaction-category {
+    font-size: 0.85rem;
+  }
+
+  .transaction-list .transaction-amount {
+    font-size: 0.85rem;
+  }
+}
+
+/* Empty state styling */
+.transaction-list .empty-state {
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}
+
+/* Hover effects */
+.transaction-list .list-group-item:hover {
+  background-color: rgba(0,0,0,.02);
+}
+
+/* Animation for new transactions */
+@keyframes highlightNew {
+  0% { background-color: rgba(40, 167, 69, 0.1); }
+  100% { background-color: transparent; }
+}
+
+.transaction-list .list-group-item.new-transaction {
+  animation: highlightNew 2s ease-out;
+}
+
+.transaction-list h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.transaction-group {
+  margin-bottom: 30px;
+}
+
+.date-header {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transaction-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.transaction-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.transaction-item.expense {
+  border-left: 4px solid #dc3545;
+}
+
+.transaction-item.income {
+  border-left: 4px solid #28a745;
+}
+
+.transaction-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-notes {
+  color: #6c757d;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.transaction-item.expense .transaction-amount {
+  color: #dc3545;
+}
+
+.transaction-item.income .transaction-amount {
+  color: #28a745;
+}
+
+.transaction-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.transaction-list-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.export-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.export-button:hover {
+  background-color: #45a049;
+}
+
+.export-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+} 
